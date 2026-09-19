@@ -1,0 +1,18 @@
+:root { --paper:#FAF5EB; --card:#FFFFFF; --ink:#2B2938; --muted:#6B6878; --line:#E6DED1; --green:#2ED18A; --green-edge:#1D8256; }
+@media (prefers-color-scheme: dark) { :root { --paper:#1B1A22; --card:#25232E; --ink:#F2EDE3; --muted:#A8A4B3; --line:#3A3746; } }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--paper); color:var(--ink); font:17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif; }
+main { max-width:680px; margin:0 auto; padding:48px 16px 64px; }
+.brand { display:flex; align-items:center; gap:12px; margin-bottom:28px; }
+.logo { display:grid; grid-template-columns:repeat(3,14px); gap:3px; }
+.logo span { width:14px; height:14px; border-radius:4px; background:var(--line); }
+.logo .o{background:#FF8A3D}.logo .p{background:#7D5CFF}.logo .t{background:#21C7D6}.logo .y{background:#FFC93D}
+.brand b { font:800 22px/1 ui-rounded, "SF Pro Rounded", system-ui, sans-serif; }
+h1 { font:900 40px/1.1 ui-rounded, "SF Pro Rounded", system-ui, sans-serif; margin:0 0 8px; }
+h2 { font:800 21px/1.3 ui-rounded, "SF Pro Rounded", system-ui, sans-serif; margin:36px 0 8px; }
+p, li { color:var(--ink); } .muted { color:var(--muted); }
+.card { background:var(--card); border:1px solid var(--line); border-radius:18px; padding:4px 22px; margin-top:20px; }
+.btn { display:inline-block; margin-top:8px; padding:14px 22px; border-radius:16px; background:var(--green); color:#fff; font-weight:800; text-decoration:none; box-shadow:0 5px 0 var(--green-edge); }
+a { color:inherit; }
+nav { margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:15px; }
+nav a { margin-right:18px; color:var(--muted); }
